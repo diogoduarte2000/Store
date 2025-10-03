@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ninho - Início</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="logo">Ninho</div>
+    <nav>
+      <a href="#">Início</a>
+      <a href="index.html">Produtos</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    <div class="cart-icon" onclick="toggleCart()">🛒 <span id="cart-count">0</span></div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Bem-vindo ao Ninho</h1>
+    <p>Mobiliário moderno e acolhedor para transformar a sua casa.</p>
+    <img src="https://plus.unsplash.com/premium_photo-1706140675031-1e0548986ad1?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGl2aW5ncm9vbXxlbnwwfHwwfHx8MA%3D%3D" alt="sofá hero">
+  </section>
+
+  <!-- CARRINHO -->
+  <aside id="cart">
+    <h2>Carrinho</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: €<span id="cart-total">0</span></p>
+    <button onclick="checkout()">Finalizar Compra</button>
+  </aside>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Ninho. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

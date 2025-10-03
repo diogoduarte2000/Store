@@ -1,0 +1,254 @@
+/* Reset simples */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fafafa;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4a6f63;
+}
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #333;
+}
+
+.cart-icon {
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem;
+  background: #f0f4f3;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero img {
+  margin-top: 1rem;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.products {
+  padding: 2rem;
+}
+
+.products h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.product {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 1rem;
+  text-align: center;
+}
+
+.product img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.product h3 {
+  margin: 0.5rem 0;
+}
+
+.product p {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.product button {
+  background: #4a6f63;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.product button:hover {
+  background: #39574d;
+}
+
+/* Carrinho */
+#cart {
+  position: fixed;
+  right: -350px;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  background: #fff;
+  box-shadow: -2px 0 8px rgba(0,0,0,0.2);
+  padding: 1rem;
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+
+#cart.open {
+  right: 0;
+}
+
+#cart h2 {
+  margin-bottom: 1rem;
+}
+
+#cart-items {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+#cart-items li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  background: #f0f4f3;
+}
+
+/* BODY E CONTEÚDO GLOBAL */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fdf9f0;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+header nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+/* CONTACTO */
+.contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  min-height: 80vh;
+}
+
+.contacto-container {
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  text-align: center; /* Centraliza títulos, parágrafos e formulário */
+}
+
+.contacto h2 {
+  margin-bottom: 15px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.contacto p {
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.contacto label {
+  display: block;
+  text-align: left; /* mantém labels alinhados à esquerda */
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #444;
+}
+
+.contacto input,
+.contacto textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.contacto button {
+  background-color: #f7c948;
+  color: #333;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background 0.3s;
+}
+
+.contacto button:hover {
+  background-color: #e6b833;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 25px;
+  background-color: #fff;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+}
